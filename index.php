@@ -1,3 +1,7 @@
+<?php 
+require_once 'includes'.DIRECTORY_SEPARATOR.'config.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -19,6 +23,8 @@
   <?php
 
 require_once('includes'.DIRECTORY_SEPARATOR.'Header.php');
+
+
 require_once 'includes'.DIRECTORY_SEPARATOR.'BLL.php';
 
 if(isset($_POST['login']) && isset($_POST['senha'])){
@@ -34,6 +40,10 @@ if(isset($_POST['login']) && isset($_POST['senha'])){
     }else{
         echo "Erro!";
     }
+    
+    
+    
+    
 }
 
 require_once('includes'.DIRECTORY_SEPARATOR.'Bottom.php');

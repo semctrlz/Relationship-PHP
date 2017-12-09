@@ -29,6 +29,8 @@ class Querry{
         
         return $result = $this->conecta()->query("$querry");
     }
+    
+    
 }
 
 //Classe de usuario
